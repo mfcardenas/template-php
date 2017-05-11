@@ -1,20 +1,30 @@
 <?php
 
-  /**
-   * Class PagesController
-   */
-  class ViewController {
+/**
+ * Class PagesController
+ */
+class ViewController extends BaseController {
+
+    private $entity;
+
+    function __construct() {
+        parent::__construct();
+        $this->entity = "";
+
+    }
 
     public function home() {
-      $first_name = 'Estudiante';
-      $last_name  = 'UCM';
-      require_once('views/pages/home.php');
+        $this->view("home", $this->entity, array(
+            "first_name" => "Estudiante",
+            "last_name" => "UCM"
+        ));
     }
 
     public function error() {
-      require_once('views/pages/error.php');
+        $this->view("error", $this->entity, array(
+            "first_name" => "Estudiante",
+            "last_name" => "UCM"
+        ));
     }
 
-  }
-
-?>
+}

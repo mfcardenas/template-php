@@ -9,13 +9,10 @@
 /**
  * These are the database login details
  */
-define("DRIVER",    "mysql");
-define("HOST",      "localhost");               // The host you want to connect to.
-define("USER",      "user-db");                 // The database username.
-define("PASSWORD",  "pass-user-db");            // The database password.
-define("DATABASE",  "database");                // The database name.
-define("CHARSET",   "utf-8");
 
 define("FORMAT_DATE",           "d/m/Y");
 define("FORMAT_DATE_CALENDAR",  "dd/mm/yy");
 define("FORMAT_DATE_DB",        "Y-m-d");
+
+define("CONTROLADOR_DEFECTO", "view");
+define("ACCION_DEFECTO", "home");
