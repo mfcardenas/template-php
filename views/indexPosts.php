@@ -26,7 +26,7 @@
                        Content: <?php echo $post->getContent(); ?>
                     </p>
                     <p>
-                        <a class="btn btn-primary" href="index.php?controller=post&action=show&id=<?php echo $post->getId(); ?>" role="button">Ver detalles del Post &raquo;</a>
+                        <a class="btn btn-primary" href="<?php echo $helper->url('post','show') ?>&id=<?php echo $post->getId(); ?>" role="button">Ver detalle &raquo;</a>
                     </p>
                 </div>
             <?php } ?>
