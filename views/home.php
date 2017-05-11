@@ -27,6 +27,7 @@
                     <ul>
                         <li><span class="text-info">entityBase.php:</span> Operaciones básica y comunes que implican acceso a base de datos.</li>
                         <li><span class="text-info">post.php:</span> entidades u objetos que representarán cada entidad de vuestro modelo de datos.</li>
+                        <li><span class="text-info">helperView.php:</span> Función que permitirá construir las url dentro de las vistas.</li>
                     </ul>
                 </p>
                 <p><a class="btn btn-primary" href="#" role="button">Ver detalles &raquo;</a></p>
@@ -50,6 +51,14 @@
             <div class="col-lg-4">
                 <h2>Controller</h2>
                 <p>Responde a eventos (usualmente acciones del usuario) e invoca peticiones al 'modelo' cuando se hace alguna solicitud sobre la información (por ejemplo, editar un documento o un registro en una base de datos). También puede enviar comandos a su 'vista' asociada si se solicita un cambio en la forma en que se presenta el 'modelo' (por ejemplo, desplazamiento o scroll por un documento o por los diferentes registros de una base de datos), por tanto se podría decir que el 'controlador' hace de intermediario entre la 'vista' y el 'modelo' (véase Middleware).</p>
+                <p> Ficheros de la plantilla:
+                <ul>
+                    <li><span class="text-info">controllers/baseController.php:</span> Funcionalidades generales de los controladores.</li>
+                    <li><span class="text-info">controllers/postController.php:</span> Controlador para la Entidad Post.</li>
+                    <li><span class="text-info">controllers/viewController.php:</span> Controlador para la Entidad View, acciones generales.</li>
+                    <li><span class="text-info">controllers/function.php:</span> Funciones generales para la aplicación.</li>
+                </ul>
+                </p>
                 <p><a class="btn btn-primary" href="#" role="button">Ver detalles &raquo;</a></p>
             </div>
         </div>
